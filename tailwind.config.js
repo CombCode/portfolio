@@ -18,6 +18,9 @@ module.exports = {
       sans: ['Roboto', 'ui-sans-serif', 'system-ui'],
       roboto: ['Roboto', 'sans-serif']
     },
+    aspectRatio: {
+      'card': '2 / 1',
+    },
     extend: {},
   },
   plugins: [],

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Button3D from "./Button_3DStyle.vue"
+import Button3D from "../Button_3DStyle.vue"
 export default {
     components: {Button3D, },
 }

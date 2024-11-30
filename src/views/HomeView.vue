@@ -1,15 +1,17 @@
 <template>
   <div class="header">
-    <Header></Header>
+    <Header/>
+    <Body/>
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'; // @ is an alias to /src
+import Header from '@/components/header/Header.vue'
+import Body from "@/components/body/Body.vue"
 
 export default {
   components: {
-    Header,
+    Header, Body
   },
   setup(){
     return{}
