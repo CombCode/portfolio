@@ -18,9 +18,9 @@
 
         <Transition name="leftCards_Animation">
             <div v-if="showProjectSection" class=" relative col-start-1 row-start-1">
-                    <ProjectCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl"></ProjectCardVue>
-                    <ProjectCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl"></ProjectCardVue>
-                    <ProjectCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl"></ProjectCardVue>
+                    <ProjectCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl w-fit"></ProjectCardVue>
+                    <ProjectCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl w-fit"></ProjectCardVue>
+                    <ProjectCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl w-fit"></ProjectCardVue>
             </div>
         </Transition>
     </div>
