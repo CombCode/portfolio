@@ -5,22 +5,27 @@
     </div>
 
     <div class="flex flex-row justify-between w-full h-full absolute bg-background-Lmode">
-        <div id="sideSlidingPanel_left"
-            class="border-r-8 border-r-accent-Lmode w-1/5">
-        </div>
-        <div id="sideSlidingPanel_right"
-            class="border-l-8 border-l-accent-Lmode w-1/5">
-        </div>
+        <div class="border-r-8 border-r-accent-Lmode w-1/5"></div>
+        <div class="border-l-8 border-l-accent-Lmode w-1/5"></div>
     </div>
 
-    <Transition name="cardsAnimation">
-        <div v-if="showProjectSection" class=" relative">
-                <ProjectCardVue class=" hover:rotate-3"></ProjectCardVue>
-                <ProjectCardVue class=""></ProjectCardVue>
-                <ProjectCardVue class=""></ProjectCardVue>
-        </div>
-    </Transition>
-        
+    <div class=" grid grid-cols-1 grid-rows-1">
+        <Transition name="rightCards_Animation">
+            <div v-if="showAboutMeSection" class=" relative col-start-1 row-start-1 flex justify-end"> 
+                <AboutMeCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl"></AboutMeCardVue>
+            </div>
+        </Transition>
+
+        <Transition name="leftCards_Animation">
+            <div v-if="showProjectSection" class=" relative col-start-1 row-start-1">
+                    <ProjectCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl"></ProjectCardVue>
+                    <ProjectCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl"></ProjectCardVue>
+                    <ProjectCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl"></ProjectCardVue>
+            </div>
+        </Transition>
+    </div>
+
+   
     
 </div>
 </template>
@@ -28,10 +33,11 @@
 <script>
 import Scene3D from "@/components/body/Scene3D.vue"
 import ProjectCardVue from './ProjectCard.vue'
+import AboutMeCardVue from './AboutMeCard.vue'
 import { ref } from 'vue'
 export default {
     components: {
-        Scene3D, ProjectCardVue
+        Scene3D, ProjectCardVue, AboutMeCardVue
     },
     setup(){
         let showProjectSection = ref(false)
@@ -39,41 +45,54 @@ export default {
         function handle_showCurrentHomeSection(e){
             if(e.clientX < window.innerWidth/2){
                 showProjectSection.value = true
+                showAboutMeSection.value = false
             }
             else{
                 showProjectSection.value = false
+                showAboutMeSection.value = true
             }
         }
 
+        let showAboutMeSection = ref(false)
+
         document.onmousemove = handle_showCurrentHomeSection
 
-        return {showProjectSection}
+        return {showProjectSection, showAboutMeSection}
     }
 }
 </script>
 
 <style>
-.cardsAnimation-enter-from {
+.leftCards_Animation-enter-from {
     translate: -100px;
     opacity: 0%;
 
 }
-.cardsAnimation-enter-to {
+.rightCards_Animation-enter-from {
+    translate: 100px;
+    opacity: 0%;
+}
+
+.leftCards_Animation-enter-to,
+.rightCards_Animation-enter-to {
     translate: 0px;
     opacity: 100%;
 
 }
-.cardsAnimation-enter-active
+.leftCards_Animation-enter-active,
+.rightCards_Animation-enter-active
  {
   transition: all 1s;
   transition-timing-function: cubic-bezier(0.05, 0.95, 0.05, 1);
 }
 
-.cardsAnimation-leave-to {
+.leftCards_Animation-leave-to,
+.rightCards_Animation-leave-to {
     opacity: 0%;
 
 }
-.cardsAnimation-leave-active{
+.leftCards_Animation-leave-active,
+.rightCards_Animation-leave-active{
     transition: all 0.5s;
 }
     
