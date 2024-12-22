@@ -1,5 +1,14 @@
 <template>
   <div class="about">
-    <h1>This is an about me page</h1>
+    <SimilCV></SimilCV>
   </div>
 </template>
+<script>
+import SimilCV from '@/components/aboutView/SimilCV.vue';
+
+export default {
+  components: {
+        SimilCV
+    },
+}
+</script>
