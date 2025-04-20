@@ -1,43 +1,25 @@
 <template>
-<div class="bg-background-Lmode relative">
-    <div class="  w-full h-auto p-10">
-        <Scene3D></Scene3D>
+    <div class="h-screen w-screen flex flex-col justify-end">
+        <div id="hi" class=" w-2/3 h-full p-60">Hi<br>I'm Marco</div>
+
+        <div class=" flex flex-row justify-around pb-40 overflow-clip pt-10">
+            <signBoard class=" pt-5 rotate-3 hover:-translate-y-5 transition-all ease-out duration-500"></signBoard>
+            <signBoard class=" pt-0 rotate-6 hover:-translate-y-5 transition-all ease-out duration-500"></signBoard>
+            <signBoard class=" pt-2 -rotate-12 hover:-translate-y-5 transition-all ease-out duration-500"></signBoard>
+            <signBoard class=" pt-0 rotate-12 hover:-translate-y-5 transition-all ease-out duration-500"></signBoard>
+        </div>
     </div>
-
-    <div class="flex flex-row justify-between w-full h-full absolute bg-background-Lmode">
-        <div class="border-r-8 border-r-accent-Lmode w-1/5"></div>
-        <div class="border-l-8 border-l-accent-Lmode w-1/5"></div>
-    </div>
-
-    <div class=" grid grid-cols-1 grid-rows-1">
-        <Transition name="rightCards_Animation">
-            <div v-if="showAboutMeSection" class=" relative col-start-1 row-start-1 flex justify-end"> 
-                <AboutMeCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl"></AboutMeCardVue>
-            </div>
-        </Transition>
-
-        <Transition name="leftCards_Animation">
-            <div v-if="showProjectSection" class=" relative col-start-1 row-start-1">
-                    <ProjectCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl w-fit"></ProjectCardVue>
-                    <ProjectCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl w-fit"></ProjectCardVue>
-                    <ProjectCardVue class=" hover:rotate-3 duration-200 drop-shadow-2xl w-fit"></ProjectCardVue>
-            </div>
-        </Transition>
-    </div>
-
-   
-    
-</div>
 </template>
 
 <script>
 import Scene3D from "@/components/body/Scene3D.vue"
 import ProjectCardVue from './ProjectCard.vue'
 import AboutMeCardVue from './AboutMeCard.vue'
+import signBoard from './signBoard.vue'
 import { ref } from 'vue'
 export default {
     components: {
-        Scene3D, ProjectCardVue, AboutMeCardVue
+        Scene3D, ProjectCardVue, AboutMeCardVue, signBoard
     },
     setup(){
         let showProjectSection = ref(false)
