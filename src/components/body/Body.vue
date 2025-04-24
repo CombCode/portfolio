@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen w-screen flex flex-col justify-end">
+    <div class="h-screen w-screen flex flex-col justify-end bg-cyan-100">
         <div id="hi" class=" w-2/3 h-full p-60">Hi<br>I'm Marco</div>
         
         <div class=" flex flex-row justify-around overflow-clip pt-10">
