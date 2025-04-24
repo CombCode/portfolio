@@ -4,6 +4,9 @@
         <div class=" justify-center w-28 h-28 -mx-5 bg-cyan-500 rounded-full border-t-2 border-b-2 border-background-Lmode clippingCloud"></div>
         <div class=" justify-end w-16 h-16 -ml-5 bg-cyan-500 rounded-full border-t-2 border-background-Lmode  clippingCloud"></div>
     </div>
+    <div>
+        <p class=" fixed ">mode</p>
+    </div>
 </template>
   
 <script>

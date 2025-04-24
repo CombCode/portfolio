@@ -1,5 +1,5 @@
 <template>
-  <div class=" w-10/12 h-1 p-10 inset-0 mx-auto mt-5 bg-secondary-Lmode flex flex-row justify-between items-center z-40 rounded-full">
+  <div class=" w-8/12 h-1 py-10 inset-0 mx-auto mt-5 bg-secondary-Lmode flex flex-row justify-around items-center z-40 rounded-full">
     <div>
         <p>logo placeholder</p>
     </div>

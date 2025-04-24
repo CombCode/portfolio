@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header class=" fixed"></Header>
-    <Body/>
+    <Body class=" px-60"/>
   </div>
 </template>
 
