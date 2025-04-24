@@ -6,20 +6,19 @@
     <div>
         <Button3D></Button3D>
     </div>
-    <cloudShape >
-      <div>
-        <p>night mode trigger Placeholder</p>
-      </div>
-    </cloudShape>
-   
+    <div>
+      <cloudShape class=" relative"></cloudShape>
+      <matterJSContainer class=" fixed"></matterJSContainer>
+    </div>
   </div>
 </template>
 
 <script>
 import Button3D from "../Button_3DStyle.vue"
 import cloudShape from "./cloudShape.vue"
+import matterJSContainer from "./matterJSContainer.vue"
 export default {
-    components: {Button3D, cloudShape},
+    components: {Button3D, cloudShape, matterJSContainer},
 }
 </script>
 

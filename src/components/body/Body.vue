@@ -1,7 +1,7 @@
 <template>
     <div class="h-screen w-screen flex flex-col justify-end">
         <div id="hi" class=" w-2/3 h-full p-60">Hi<br>I'm Marco</div>
-
+        
         <div class=" flex flex-row justify-around overflow-clip pt-10">
             <signBoard class=" mt-5 rotate-3 hover:-translate-y-2 transition-all ease-out duration-500" caption="About me"></signBoard>
             <signBoard class=" mt-0 rotate-6 hover:-translate-y-2 transition-all ease-out duration-500" caption="Projects"></signBoard>
