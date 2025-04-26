@@ -1,6 +1,9 @@
 <template>
     <div class="h-screen w-screen flex flex-col justify-end bg-cyan-100">
-        <div id="hi" class=" w-2/3 h-full p-60">Hi<br>I'm Marco</div>
+        <div>
+        <p></p>
+        </div>
+
         
         <div class=" flex flex-row justify-around overflow-clip pt-10">
             <signBoard class=" mt-5 rotate-3 hover:-translate-y-2 transition-all ease-out duration-500" caption="About me"></signBoard>
@@ -12,14 +15,14 @@
 </template>
 
 <script>
-import Scene3D from "@/components/body/Scene3D.vue"
+import { Sun } from 'lucide-vue-next';
 import ProjectCardVue from './ProjectCard.vue'
 import AboutMeCardVue from './AboutMeCard.vue'
 import signBoard from './signBoard.vue'
 import { ref } from 'vue'
 export default {
     components: {
-        Scene3D, ProjectCardVue, AboutMeCardVue, signBoard
+        ProjectCardVue, AboutMeCardVue, signBoard
     },
     setup(){
         let showProjectSection = ref(false)
@@ -39,7 +42,7 @@ export default {
 
         document.onmousemove = handle_showCurrentHomeSection
 
-        return {showProjectSection, showAboutMeSection}
+        return {showProjectSection, showAboutMeSection, Sun}
     }
 }
 </script>
