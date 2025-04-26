@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header class=" fixed"></Header>
+    <Header class=" absolute"></Header>
     <Body class=" px-60"/>
   </div>
 </template>

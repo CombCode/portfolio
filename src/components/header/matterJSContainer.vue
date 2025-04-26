@@ -52,7 +52,7 @@
         })
 
         const boolSubtractionMoon = Bodies.circle(240, -100, 60, {
-        render: { fillStyle: 'oklch(95.6% 0.045 203.388)' }
+        render: { fillStyle: '#A5F3FC' }
         })
 
         // Unione dei due cerchi come un unico corpo statico

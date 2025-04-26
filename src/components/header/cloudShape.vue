@@ -6,12 +6,12 @@
         <div class=" absolute left-1/2 -translate-x-1/2 bg-cyan-500 p-2 rounded-full shadow">
             <div class="flex flex-row" v-if="activeMode == 'sun'">
                 <Sun color="white" stroke-width="2"/>
-                <ArrowLeftRight color="white" size="12" class=" my-auto"/>
+                <ChevronsRight  color="white" size="24" class=" my-auto"/>
                 <Moon color="white" stroke-width="1"/>  
             </div>
             <div class="flex flex-row" v-if="activeMode == 'moon'">
                 <Moon color="white" stroke-width="1"/> 
-                <ArrowLeftRight color="white" size="12" class=" my-auto"/>
+                <ChevronsRight  color="white" size="24" class=" my-auto"/>
                 <Sun color="white" stroke-width="2"/> 
             </div>
             
@@ -21,10 +21,10 @@
 </template>
   
 <script>
-import { Moon, Sun, ArrowLeftRight } from 'lucide-vue-next';
+import { Moon, Sun, ChevronsRight  } from 'lucide-vue-next';
 export default {
     name: 'CloudShape',
-    components: { Moon, Sun, ArrowLeftRight},
+    components: { Moon, Sun, ChevronsRight },
     props: [ "activeMode" ],
 
     setup(props) {

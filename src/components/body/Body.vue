@@ -1,28 +1,31 @@
 <template>
-    <div class="h-screen w-screen flex flex-col justify-end bg-cyan-100">
+    <div class="h-screen w-screen flex flex-col justify-end bg-cyan-200">
         <div>
-        <p></p>
+            <MeCardVue class=" w-2/3 h-60 mb-10"/>
         </div>
 
         
-        <div class=" flex flex-row justify-around overflow-clip pt-10">
+        <div class=" flex flex-row justify-around overflow-clip pt-10 z-10">
             <signBoard class=" mt-5 rotate-3 hover:-translate-y-2 transition-all ease-out duration-500" caption="About me"></signBoard>
             <signBoard class=" mt-0 rotate-6 hover:-translate-y-2 transition-all ease-out duration-500" caption="Projects"></signBoard>
-            <signBoard class=" mt-2 -rotate-12 hover:-translate-y-2 transition-all ease-out duration-500" caption="Other"></signBoard>
+            <signBoard class=" mt-2 -rotate-12 hover:-translate-y-2 transition-all ease-out duration-500" caption="Not-tech things"></signBoard>
             <signBoard class=" mt-0 rotate-12 hover:-translate-y-2 transition-all ease-out duration-500" caption="How is this made?"></signBoard>
         </div>
+        <div class=" absolute w-screen h-20 bg-green-700 -translate-x-60"></div>
+        <div class=" absolute w-screen h-16 bg-green-600 -translate-x-60"></div>
+        <div class=" absolute w-screen h-12 bg-green-500 -translate-x-60"></div>
+        
     </div>
 </template>
 
 <script>
-import { Sun } from 'lucide-vue-next';
 import ProjectCardVue from './ProjectCard.vue'
-import AboutMeCardVue from './AboutMeCard.vue'
+import MeCardVue from './MeCard.vue'
 import signBoard from './signBoard.vue'
 import { ref } from 'vue'
 export default {
     components: {
-        ProjectCardVue, AboutMeCardVue, signBoard
+        ProjectCardVue, MeCardVue, signBoard
     },
     setup(){
         let showProjectSection = ref(false)
@@ -42,7 +45,7 @@ export default {
 
         document.onmousemove = handle_showCurrentHomeSection
 
-        return {showProjectSection, showAboutMeSection, Sun}
+        return {showProjectSection, showAboutMeSection}
     }
 }
 </script>
