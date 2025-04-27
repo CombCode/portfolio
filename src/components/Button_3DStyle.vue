@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="transition relative bg-primary-Lmode border-2 border-text-Lmode rounded-xl hover:scale-110">
-            <div class="relative flex flex-row items-center justify-center bg-primary-Lmode border-2 border-text-Lmode rounded-md py-1 px-3"
+        <div class="transition relative bg-primary-Lmode dark:bg-accent-Lmode border-2 border-text-Lmode rounded-xl hover:scale-110">
+            <div class="relative flex flex-row items-center justify-center bg-primary-Lmode dark:bg-accent-Lmode border-2 border-text-Lmode rounded-md py-1 px-3"
              @mousedown="toggle_buttonIsPressed" @mouseup="toggle_buttonIsPressed" :class="{' -translate-x-1 -translate-y-1 ': !buttonIsPressed}">
-                <p class=" text-text-Lmode font-roboto text-xl">Get in touch</p>
-                <p class=" text-accent-Lmode font-roboto font-bold">!</p>
+                <p class=" text-text-Lmode dark:text-background-Lmode font-roboto text-xl">Get in touch&nbsp;</p>
+                <p class=" text-accent-Lmode dark:text-secondary-Lmode font-roboto font-bold text-2xl">!</p>
             </div>
         </div>
     </div>

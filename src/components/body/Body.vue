@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen w-screen flex flex-col justify-end bg-cyan-200">
+    <div class="h-screen w-screen flex flex-col justify-end bg-cyan-200 dark:bg-cyan-900">
         <div>
             <MeCardVue class=" w-2/3 h-60 mb-10"/>
         </div>
@@ -11,9 +11,9 @@
             <signBoard class=" mt-2 -rotate-12 hover:-translate-y-2 transition-all ease-out duration-500" caption="Not-tech things"></signBoard>
             <signBoard class=" mt-0 rotate-12 hover:-translate-y-2 transition-all ease-out duration-500" caption="How is this made?"></signBoard>
         </div>
-        <div class=" absolute w-screen h-20 bg-green-700 -translate-x-60"></div>
-        <div class=" absolute w-screen h-16 bg-green-600 -translate-x-60"></div>
-        <div class=" absolute w-screen h-12 bg-green-500 -translate-x-60"></div>
+        <div class=" absolute w-screen h-20 bg-green-700 dark:bg-green-950 -translate-x-60"></div>
+        <div class=" absolute w-screen h-16 bg-green-600 dark:bg-green-900 -translate-x-60"></div>
+        <div class=" absolute w-screen h-12 bg-green-500 dark:bg-green-800 -translate-x-60"></div>
         
     </div>
 </template>

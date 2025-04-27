@@ -1,5 +1,5 @@
 <template>
-<div class=" flex flex-row   border-fuchsia-400">
+<div class=" flex flex-row">
     
         <div id="img-container" class=" basis-1/3 w-full h-full rounded-full z-10">
             <img src="@/assets/noImageLogo.webp" alt="" class=" w-full h-full object-cover rounded-full"> 
@@ -7,8 +7,8 @@
         
         <transition name="appearFormLeft">
         <div class="basis-2/3 w-full h-full flex flex-col items-start justify-center pl-5" v-if="showName">
-            <p class=" text-9xl">Hi</p>
-            <p class=" text-6xl">I'm Marco</p>
+            <p class=" text-9xl text-text-Lmode dark:text-background-Lmode">Hi</p>
+            <p class=" text-6xl text-text-Lmode dark:text-background-Lmode">I'm Marco</p>
         </div>
         </transition>
     

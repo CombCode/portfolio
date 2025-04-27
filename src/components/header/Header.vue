@@ -1,5 +1,5 @@
 <template>
-  <div class=" w-8/12 h-1 py-10 inset-0 mx-auto mt-5 bg-secondary-Lmode flex flex-row justify-around items-center z-40 rounded-full shadow-xl">
+  <div class=" w-8/12 h-1 py-10 inset-0 mx-auto mt-5 bg-secondary-Lmode dark:bg-gray-800 flex flex-row justify-around items-center z-40 rounded-full shadow-xl dark:shadow-gray-50 dark:shadow-md">
   
     <div>
         <Button3D></Button3D>
@@ -15,10 +15,10 @@
 import Button3D from "../Button_3DStyle.vue"
 import cloudShape from "./cloudShape.vue"
 import matterJSContainer from "./matterJSContainer.vue"
-import { ref } from 'vue'
+import { ref} from 'vue'
 export default {
     components: {Button3D, cloudShape, matterJSContainer},
-    setup() {
+    setup(props, context) {
 
         let show = ref(true)
         let astro = ref("sun")
@@ -26,7 +26,8 @@ export default {
         let toggleLightDarkMode = () => {
           reload_matterJSContainer()
           astro.value = astro.value === "sun" ? "moon" : "sun"
-          console.log(astro.value)  
+          console.log(astro.value)
+          context.emit('mode', astro.value)
         }
 
         let reload_matterJSContainer = () => {

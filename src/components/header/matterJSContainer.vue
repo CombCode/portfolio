@@ -1,6 +1,6 @@
 <template>
     <div ref="scene" class=" h-96 w-96 -translate-x-28">
-      <!-- Matter.js verrà montato qui -->
+      
     </div>
   </template>
   
@@ -52,7 +52,7 @@
         })
 
         const boolSubtractionMoon = Bodies.circle(240, -100, 60, {
-        render: { fillStyle: '#A5F3FC' }
+        render: { fillStyle: 'rgb(22, 78, 99)' }
         })
 
         // Unione dei due cerchi come un unico corpo statico
