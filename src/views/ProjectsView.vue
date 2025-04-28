@@ -1,9 +1,8 @@
 <template>
   <div class="p-10 bg-green-500 dark:bg-green-800">
-    <div class="p-10 rounded-full overflow-clip bg-green-800 innerShadowCustom">
-      <ProjectsSlider></ProjectsSlider>
-    </div>
+    <ProjectsSlider></ProjectsSlider>
   </div>
+    
 </template>
 <script>
 import ProjectDescription from '@/components/ProjectsView/ProjectDescription.vue';
