@@ -1,5 +1,5 @@
 <template>
-    <div class=" flex flex-row bg-secondary-Lmode">
+    <div class=" flex flex-row bg-green-500">
         <div class=" w-1/4">
             <div id="cv_picture" class=" m-10 rounded-xl border-4 border-accent-Lmode">
                 <img src="@/assets/noImageLogo.webp" alt="" class=" w-full h-full object-cover rounded-xl"> 

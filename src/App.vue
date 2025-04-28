@@ -1,15 +1,29 @@
 <template>
-  <router-view></router-view>
+  <div :class="{ 'dark': darkMode }">
+    <HomeView @mode="modeSetting" />
+    <router-view></router-view>
+  </div>
 </template>
 <script>
-import HomeView from "./views/HomeView.vue"
+import HomeView from "./views/HomeView.vue";
+import { ref } from 'vue'
 
 export default{
   components: {
     HomeView,
   },
   setup() {
-    return{}
+    const darkMode = ref(false)
+
+    const modeSetting = (astro) => {
+      if(astro === "moon"){
+        darkMode.value = true
+      }
+      else if(astro === "sun"){
+        darkMode.value = false
+      }
+    }
+    return{darkMode, modeSetting}
   },
 }
 </script>

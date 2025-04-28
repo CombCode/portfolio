@@ -28,7 +28,7 @@
       engine: engine,
       options: {
         width: 400,
-        height: 500,
+        height: 300,
         wireframes: false,
         background: 'transparent'
       }

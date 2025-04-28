@@ -1,12 +1,12 @@
 <template>
-  <div class=" w-8/12 h-1 py-10 inset-0 mx-auto mt-5 bg-secondary-Lmode dark:bg-gray-800 flex flex-row justify-around items-center z-40 rounded-full shadow-xl dark:shadow-gray-50 dark:shadow-md">
+  <div class=" w-8/12 h-1 py-10 inset-0 mx-auto mt-5 bg-secondary-Lmode dark:bg-gray-800 flex flex-row justify-around items-center z-20 rounded-full shadow-xl dark:shadow-gray-50 dark:shadow-xl">
   
     <div>
         <Button3D></Button3D>
     </div>
     <div>
-      <cloudShape class=" relative active:scale-90 z-20" @click="toggleLightDarkMode" :activeMode=astro></cloudShape>
-      <matterJSContainer v-if="show" :astro=astro class=" fixed z-10"></matterJSContainer>
+      <cloudShape class=" relative active:scale-90 z-30" @click="toggleLightDarkMode" :activeMode=astro></cloudShape>
+      <matterJSContainer v-if="show" :astro=astro class=" absolute "></matterJSContainer>
     </div>
   </div>
 </template>

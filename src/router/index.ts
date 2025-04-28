@@ -1,14 +1,9 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import AbooutView from '../views/AboutView.vue'
 import ProjectsView from '../views/ProjectsView.vue'
 
 const routes: Array<RouteRecordRaw> = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
+ 
   {
     path: '/about',
     name: 'about',
@@ -23,7 +18,10 @@ const routes: Array<RouteRecordRaw> = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 200, behavior: 'smooth' } 
+  }
 })
 
 export default router
