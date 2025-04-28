@@ -1,5 +1,5 @@
 <template>
-        <div class="py-5 rounded-full scale-75 overflow-hidden bg-green-800 innerShadowCustom">
+        <div class="py-5 rounded-full scale-75 overflow-hidden bg-green-800 border-8 border-green-600 innerShadowCustom">
             <div class=" flex flex-row justify-center scrollRightAnimated my-5">
                 <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
                 <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
@@ -51,6 +51,6 @@ export default {
     }
 
     .innerShadowCustom {
-    box-shadow: inset 0 18px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 16px 16px 20px rgba(0, 0, 0, 0.4);
   }
 </style>

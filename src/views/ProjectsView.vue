@@ -1,12 +1,5 @@
 <template>
-  <div class="p-10 bg-green-500 bg-gradient-to-b from-green-500 via-amber-600 to-amber-600 dark:bg-green-800">
-
-    <h1>TOP 3</h1>
-    <div class=" p-20 flex flex-row align-middle justify-center">
-      <div class=" bg-red-300 w-full aspect-card mx-5"></div>
-      <div class=" bg-red-300 w-full aspect-card mx-5"></div>
-      <div class=" bg-red-300 w-full aspect-card mx-5"></div>
-    </div>
+  <div class="p-10 bg-green-500 bg-gradient-to-b from-green-500 dark:bg-green-800">
 
     <ProjectsSlider></ProjectsSlider>
 
