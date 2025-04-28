@@ -19,13 +19,12 @@
 </template>
 
 <script>
-import ProjectCardVue from './ProjectCard.vue'
 import MeCardVue from './MeCard.vue'
 import signBoard from './signBoard.vue'
 import { ref } from 'vue'
 export default {
     components: {
-        ProjectCardVue, MeCardVue, signBoard
+        MeCardVue, signBoard
     },
     setup(){
         let showProjectSection = ref(false)

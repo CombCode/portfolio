@@ -1,25 +1,25 @@
 <template>
-        <div class="py-5 rounded-full overflow-hidden bg-green-800 innerShadowCustom">
+        <div class="py-5 rounded-full scale-75 overflow-hidden bg-green-800 innerShadowCustom">
             <div class=" flex flex-row justify-center scrollRightAnimated my-5">
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
                 <!-- !! the minimum number of div (with this w and mx) to animate smoothly is 8 !! -->
             </div>
             <div class=" flex flex-row justify-center scrollLeftAnimated my-5">
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-60 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
+                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
                 <!-- !! the minimum number of div (with this w and mx) to animate smoothly is 8 !! -->
             </div>
         </div>
