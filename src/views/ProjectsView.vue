@@ -9,13 +9,12 @@
     
 </template>
 <script>
-import ProjectDescription from '@/components/ProjectsView/ProjectDescription.vue';
 import ProjectsSlider from '@/components/ProjectsView/ProjectsSlider.vue';
 import ProjectsTable from '@/components/ProjectsView/ProjectsTable.vue';
 
 export default {
   components: {
-      ProjectsSlider, ProjectDescription, ProjectsTable
+      ProjectsSlider, ProjectsTable
     },
 }
 </script>

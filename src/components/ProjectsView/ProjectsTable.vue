@@ -8,8 +8,8 @@
             </div>
         <div class="grid grid-cols-4 place-content-start gap-4 overflow-scroll p-8 h-full">
             
-            <div v-for="i in 30" :key="i" class=" hover:scale-105 transition-all ease-in-out">
-                <ProjectCard></ProjectCard>
+            <div v-for="project in 7" :key="project">
+                <ProjectCard class=" hover:scale-105 transition-all ease-in-out"></ProjectCard>
             </div>
         </div>
         </div>

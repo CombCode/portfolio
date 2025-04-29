@@ -1,15 +1,21 @@
 <template>
 <div>
-    <div class="w-full relative aspect-card rounded-xl">
+    <div class="w-full relative aspect-card rounded-xl" @click="toggleProjectModal">
         <img :src="thumbnail" alt="" class=" w-full h-full object-cover rounded-xl">
         <p class=" absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 bg-primary-Lmode rounded-full p-1">{{ title }}</p>
     </div>
+
+    <teleport to='body'>
+        <ProjectDetailModal v-if="showModal" projectData ="projectData" @close="toggleProjectModal"></ProjectDetailModal>
+    </teleport>
 
 </div>
 </template>
 
 <script>
 import noImageLogo from "@/assets/noImageLogo.webp"
+import ProjectDetailModal from "@/components/ProjectsView/ProjectDetailModal.vue"
+import { ref } from 'vue'
 export default {
     props: {
         projectData: {
@@ -17,12 +23,24 @@ export default {
             required: false
         }
     },
+    components: {
+        ProjectDetailModal
+    },
     setup(props) {
 
         const title = props.projectData ? props.projectData.title : "Project Title"
         const thumbnail  = props.projectData ? props.projectData.thumbnail : noImageLogo
 
-        return { title, thumbnail }
+        const showModal = ref(false)
+
+        const toggleProjectModal = () => {
+            console.log("toggle project modal")
+            showModal.value = !showModal.value
+            console.log("showModal", showModal.value)
+            document.body.style.overflow = showModal.value ? "hidden" : "auto"
+        }
+
+        return { title, thumbnail, toggleProjectModal, showModal }   
     },
 }
 </script>
