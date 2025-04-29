@@ -2,6 +2,7 @@
   <div :class="{ 'dark': darkMode }">
     <HomeView @mode="modeSetting" />
     <router-view></router-view>
+    <div id="modal"></div>
   </div>
 </template>
 <script>

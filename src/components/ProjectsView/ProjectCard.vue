@@ -5,7 +5,7 @@
         <p class=" absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 bg-primary-Lmode rounded-full p-1">{{ title }}</p>
     </div>
 
-    <teleport to='body'>
+    <teleport to='#modal'>
         <ProjectDetailModal v-if="showModal" projectData ="projectData" @close="toggleProjectModal"></ProjectDetailModal>
     </teleport>
 

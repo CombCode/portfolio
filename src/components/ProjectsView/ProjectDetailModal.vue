@@ -1,10 +1,11 @@
 <template>
-    <div  class="backdrop-blur-md bg-green-500 bg-opacity-50 w-screen h-screen fixed left-0 top-0 py-20 px-40" @click.self="closeModal">
-        <div class="bg-white h-full w-full flex flex-col rounded-xl overflow-auto" >
-            <h1>title</h1>
+    <div  class="backdrop-blur-md bg-gray-500 dark:bg-black bg-opacity-50 dark:bg-opacity-75 w-screen h-screen fixed left-0 top-0 py-20 px-80" @click.self="closeModal">
+        <div class=" bg-background-Lmode dark:bg-gray-800 border-8 border-primary-Lmode dark:border-cyan-900 text-black dark:text-white h-full w-full flex flex-col rounded-xl overflow-auto p-10" >
+            <h1 class=" ">title</h1>
             <p>description</p>
             <div class="flex flex-row overflow-x-scroll"></div>
-            <div>links</div>
+            <p>possibili update e fix</p>
+            <div>links</div> 
         </div>
     </div>
 </template>
