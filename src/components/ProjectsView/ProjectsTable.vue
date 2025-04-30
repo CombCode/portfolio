@@ -8,8 +8,8 @@
             </div>
         <div class="grid grid-cols-4 place-content-start gap-4 overflow-scroll p-8 h-full">
             
-            <div v-for="project in 7" :key="project">
-                <ProjectCard class=" hover:scale-105 transition-all ease-in-out"></ProjectCard>
+            <div v-for="(project, index) in projectsData" :key="index">
+                <ProjectCard :projectData="project" class=" hover:scale-105 transition-all ease-in-out"></ProjectCard>
             </div>
         </div>
         </div>
@@ -18,6 +18,7 @@
 </template>
 <script>
 import ProjectCard from '@/components/ProjectsView/ProjectCard.vue';
+import { onMounted } from 'vue';
 import { ref } from 'vue';
 export default {
   name: 'ProjectsTable',
@@ -39,7 +40,27 @@ export default {
         activeTag.value = tag
     }
 
-    return { tags, activeTag, selectTag }   
+    let projectsData = ref([])
+    const fetchProjectprojectsData = async () => {
+        console.log("fetching projectsData")
+        try{
+            const response = await fetch('https://portfolioprojects-a9f24.web.app/projects.json');
+            if(response.status !== 200){
+                throw new Error("Error fetching projects data")
+            }
+            projectsData.value = await response.json();
+        }
+        catch (error) {
+            console.error("Error fetching projects data", error)
+            return
+        }
+    }
+
+    onMounted(() => {
+        fetchProjectprojectsData()
+    })
+
+    return { tags, activeTag, selectTag, projectsData }   
   }
 };
 </script>

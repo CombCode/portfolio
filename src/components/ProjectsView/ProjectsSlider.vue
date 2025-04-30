@@ -26,8 +26,30 @@
 </template>
 
 <script>
+import { onMounted } from 'vue'
 export default {
-    
+    setup() {
+        let projectsData = ref([])
+        const fetchProjectprojectsData = async () => {
+            console.log("fetching projectsData")
+            try{
+                const response = await fetch('https://portfolioprojects-a9f24.web.app/projects.json');
+                if(response.status !== 200){
+                    throw new Error("Error fetching projects data")
+                }
+                projectsData.value = await response.json();
+            }
+            catch (error) {
+                console.error("Error fetching projects data", error)
+                return
+            }
+        }
+
+        onMounted(() => {
+            fetchProjectprojectsData()
+        })
+        return { projectsData}
+    },
 }
 </script>
 

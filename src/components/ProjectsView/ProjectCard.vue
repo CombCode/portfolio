@@ -27,9 +27,9 @@ export default {
         ProjectDetailModal
     },
     setup(props) {
-
-        const title = props.projectData ? props.projectData.title : "Project Title"
-        const thumbnail  = props.projectData ? props.projectData.thumbnail : noImageLogo
+        console.log("ProjectCard props", props)
+        const title = props.projectData.title ? props.projectData.title : "Project Title"
+        const thumbnail  = props.projectData.thumbnail ? props.projectData.thumbnail : noImageLogo
 
         const showModal = ref(false)
 
