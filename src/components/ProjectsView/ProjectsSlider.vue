@@ -27,6 +27,7 @@
 
 <script>
 import { onMounted } from 'vue'
+import { ref } from 'vue'
 export default {
     setup() {
         let projectsData = ref([])

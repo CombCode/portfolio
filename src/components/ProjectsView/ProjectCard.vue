@@ -2,11 +2,11 @@
 <div>
     <div class="w-full relative aspect-card rounded-xl" @click="toggleProjectModal">
         <img :src="thumbnail" alt="" class=" w-full h-full object-cover rounded-xl">
-        <p class=" absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 bg-primary-Lmode rounded-full p-1">{{ title }}</p>
+        <p class=" absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 bg-primary-Lmode rounded p-1">{{ title }}</p>
     </div>
 
     <teleport to='#modal'>
-        <ProjectDetailModal v-if="showModal" projectData ="projectData" @close="toggleProjectModal"></ProjectDetailModal>
+        <ProjectDetailModal v-if="showModal" :projectData ="projectData" @close="toggleProjectModal"></ProjectDetailModal>
     </teleport>
 
 </div>
@@ -27,9 +27,9 @@ export default {
         ProjectDetailModal
     },
     setup(props) {
-        console.log("ProjectCard props", props)
-        const title = props.projectData.title ? props.projectData.title : "Project Title"
-        const thumbnail  = props.projectData.thumbnail ? props.projectData.thumbnail : noImageLogo
+        const projectData = props.projectData
+        const title = projectData.title ? projectData.title : "Project Title"
+        const thumbnail  = projectData.screenshots ? projectData.screenshots[0] : noImageLogo
 
         const showModal = ref(false)
 
@@ -40,7 +40,7 @@ export default {
             document.body.style.overflow = showModal.value ? "hidden" : "auto"
         }
 
-        return { title, thumbnail, toggleProjectModal, showModal }   
+        return { title, thumbnail, toggleProjectModal, showModal, projectData }   
     },
 }
 </script>
