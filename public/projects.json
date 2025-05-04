@@ -1,11 +1,48 @@
 
 [ 
         {
-        "title": "Project 1",
-        "description": "Description of project 1."
+                "title": "Reservation system",
+                "description": "Clone of a restaurant reservation system. The web app is thinked to be used by the restaurant staff to manage reservations. Is a clone of a real system i used but with some style and functionality changes based on my user experience. Obviously, the data is not real and is not connected to any database. The app is built with Vue.js and uses cashe to store data with some examples built in.",
+                "screenshots": [
+                                "/img/screenshots/reservationSystem/RS1.png",
+                                "/img/screenshots/reservationSystem/RS2.png",
+                                "/img/screenshots/reservationSystem/RS3.png"
+                                ],
+                "links": [
+                                {"url" : "https://reservation-system-semiclone.netlify.app/"},
+                                {"github" : "https://github.com/CombCode/restaurant-reservation-system-clone"}
+                        ], 
+                "tags": ["Web", "html", "css", "js", "vue"]
         },
+
         {
-        "title": "Project 2",
-        "description": "Description of project 2."
+                "title": "3 Little Games",
+                "description": "Modern looking implementation of three classic games: Tic Tac Toe, Arcanoid and Snake.",
+                "screenshots": [
+                                "/img/screenshots/littleGames/LG1.png",
+                                "/img/screenshots/littleGames/LG2.png",
+                                "/img/screenshots/littleGames/LG3.png",
+                                "/img/screenshots/littleGames/LG4.png"
+                                ],
+                "links": [
+                                {"url" : "https://sprightly-alpaca-1c7299.netlify.app"},
+                                {"github" : "https://github.com/CombCode/3LittleGames"}
+                        ], 
+                "tags": ["Web", "html", "css", "js", "vue"]
+        },
+
+        {
+                "title": "3D calculator",
+                "description": "Fancy alternative to the classic javascript exercise. The calculator model is built in Blender and rendered with the Three.js library. The app is a functioning calculator in a 3D space, sense the click on buttons with the old yet usefull raycasting method and display the result as a mesh on the calculator screen.",
+                "screenshots": [
+                                "/img/screenshots/calculator3D/CA1.png",
+                                "/img/screenshots/calculator3D/CA2.png",
+                                "/img/screenshots/calculator3D/CA3.png"
+                                ],
+                "links": [
+                                {"url" : "https://sweet-bublanina-7d3631.netlify.app"},
+                                {"github" : "https://github.com/CombCode/Calculator3D"}
+                        ], 
+                "tags": ["Web", "3D", "html", "css", "js", "vue"]
         }
 ]
