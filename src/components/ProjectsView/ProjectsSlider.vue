@@ -1,36 +1,36 @@
 <template>
         <div class="py-5 rounded-full scale-75 overflow-hidden bg-green-800 border-8 border-green-600 innerShadowCustom">
+
             <div class=" flex flex-row justify-center scrollRightAnimated my-5">
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <!-- !! the minimum number of div (with this w and mx) to animate smoothly is 8 !! -->
+                <div v-for="(project, index) in projectsData" :key="index">
+                    <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out">
+                        <ProjectCard :projectData="project" class=" hover:scale-105 w-full h-full transition-all ease-in-out"></ProjectCard>
+                    </div> 
+                </div>
             </div>
+
             <div class=" flex flex-row justify-center scrollLeftAnimated my-5">
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out"> box1</div>
-                <!-- !! the minimum number of div (with this w and mx) to animate smoothly is 8 !! -->
+                <div v-for="(project, index) in projectsData" :key="index">
+                    <div class=" bg-orange-200 w-80 aspect-card rounded-xl relative mx-10 flex-shrink-0 hover:scale-105 transition-all ease-in-out">
+                        <ProjectCard :projectData="project" class=" hover:scale-105 w-full h-full transition-all ease-in-out"></ProjectCard>
+                    </div> 
+                </div>
             </div>
         </div>
 </template>
 
 <script>
+import ProjectCard from '@/components/ProjectsView/ProjectCard.vue'
 import { onMounted } from 'vue'
 import { ref } from 'vue'
 export default {
+    components: {
+        ProjectCard
+    },
     setup() {
+
         let projectsData = ref([])
+
         const fetchProjectprojectsData = async () => {
             console.log("fetching projectsData")
             try{
@@ -49,6 +49,7 @@ export default {
         onMounted(() => {
             fetchProjectprojectsData()
         })
+
         return { projectsData}
     },
 }

@@ -3,15 +3,17 @@
         <p class=" m-5 basis-1/3 text-white text-8xl self-center font-bold textShadow">All<br>Projects</p>
 
         <div :class="activeTag.color" class=" basis-2/3 relative m-5 w-full rounded-xl shadow-black shadow-2xl bg-opacity-50">
-        <div id="tagSection" class=" absolute pl-5 -translate-y-full flex flex-row">
+
+            <div id="tagSection" class=" absolute pl-5 -translate-y-full flex flex-row">
                 <div v-for="tag in tags" @click="selectTag(tag)" :class="tag.color" class=" p-2 px-8 rounded-t-xl text-white -mr-3 hover:mr-3 transition-all ease-in-out min-w">{{tag.name}}</div>
             </div>
-        <div class="grid grid-cols-4 place-content-start gap-4 overflow-scroll p-8 h-full">
-            
-            <div v-for="(project, index) in projectsData" :key="index">
-                <ProjectCard :projectData="project" class=" hover:scale-105 transition-all ease-in-out"></ProjectCard>
+
+            <div class="grid grid-cols-4 place-content-start gap-4 overflow-scroll p-8 h-full">
+                <div v-for="(project, index) in projectsData" :key="index">
+                    <ProjectCard v-if="activeTag.name == 'All' || project.tags.includes(activeTag.name)" :projectData="project" class=" hover:scale-105 transition-all ease-in-out"></ProjectCard>
+                </div>
             </div>
-        </div>
+
         </div>
     </div>
     
@@ -48,7 +50,7 @@ export default {
             if(response.status !== 200){
                 throw new Error("Error fetching projects data")
             }
-            projectsData.value = await response.json();
+            projectsData.value = await response.json()
         }
         catch (error) {
             console.error("Error fetching projects data", error)
