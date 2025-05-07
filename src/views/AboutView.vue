@@ -1,6 +1,6 @@
 <template>
-  <div class=" flex flex-row overflow-scroll w-screen ">
-    <SimilCV class=" w-2/3 bg-green-400"></SimilCV>
+  <div class=" flex flex-row overflow-y-hidden w-screen bg-green-500 dark:bg-green-800 pt-20">
+    <SimilCV class=" w-2/3"></SimilCV>
     <KnowledgeTreesContainer class=" w-1/3"></KnowledgeTreesContainer>
   </div>
 </template>
