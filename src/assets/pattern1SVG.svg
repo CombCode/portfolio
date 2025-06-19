@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="377.95276"
+       height="377.95313"
+       patternTransform="scale(1)"
+       preserveAspectRatio="xMidYMid"
+       id="pattern24">
+      <g
+         id="g18"
+         style="opacity:1"
+         transform="scale(3.7795276)">
+        <path
+           style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#f7a6a6;stroke-linecap:round;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+           d="M 25,75 V 25"
+           id="path17" />
+        <path
+           style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;stroke-linecap:round;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+           d="M 25,17.5 A 7.5,7.5 0 0 0 17.5,25 V 75 A 7.5,7.5 0 0 0 25,82.5 7.5,7.5 0 0 0 32.5,75 V 25 A 7.5,7.5 0 0 0 25,17.5 Z"
+           id="path18" />
+      </g>
+      <path
+         id="path19"
+         style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;stroke-width:3.77953;stroke-linecap:round;enable-background:accumulate;stop-color:#000000"
+         d="m 282.23828,275.11719 c -15.65275,0.15821 -28.21429,12.97417 -28.05859,28.62695 l 0.93945,74.20899 h 56.68945 l -0.94336,-74.76954 c -0.15391,-15.65582 -12.97116,-28.22208 -28.62695,-28.0664 z" />
+      <path
+         id="path20"
+         style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;stroke-width:3.77953;stroke-linecap:round;enable-background:accumulate;stop-color:#000000"
+         d="m 255.11914,0 0.94336,74.769528 c 0.15496,15.655049 12.97191,28.220132 28.62695,28.064452 15.65275,-0.15818 28.21429,-12.974174 28.0586,-28.626951 L 311.80859,0 Z"
+         clip-path="none" />
+      <g
+         id="path22"
+         style="opacity:1"
+         transform="scale(3.7795276)">
+        <path
+           style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#aca7a7;fill-opacity:0;stroke-linecap:round;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+           d="m 83.386373,47.937675 a 8.7108355,8.7108459 0 0 1 -8.710836,8.710846 8.7108355,8.7108459 0 0 1 -8.710835,-8.710846 8.7108355,8.7108459 0 0 1 8.710835,-8.710845 8.7108355,8.7108459 0 0 1 8.710836,8.710845 z"
+           id="path23" />
+        <path
+           style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;stroke-linecap:round;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+           d="m 74.675781,36.226562 c -6.432184,0 -11.710937,5.278752 -11.710937,11.710938 0,6.432186 5.278753,11.710937 11.710937,11.710937 6.432184,0 11.710938,-5.278751 11.710938,-11.710937 0,-6.432186 -5.278754,-11.710938 -11.710938,-11.710938 z m 0,6 c 3.18954,0 5.710938,2.521389 5.710938,5.710938 0,3.189549 -2.521398,5.710937 -5.710938,5.710937 -3.189539,0 -5.710937,-2.521388 -5.710937,-5.710937 0,-3.189549 2.521398,-5.710938 5.710937,-5.710938 z"
+           id="path24" />
+      </g>
+      <rect
+         style="fill:none;fill-opacity:0;stroke:none;stroke-width:22.6772;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect24"
+         width="377.95276"
+         height="377.95276"
+         x="0"
+         y="0" />
+    </pattern>
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:url(#pattern24);stroke:none"
+       transform="scale(0.26458333)"
+       width="377.95276"
+       height="377.95312"
+       x="0"
+       y="0"
+       id="rect25" />
+  </g>
+</svg>

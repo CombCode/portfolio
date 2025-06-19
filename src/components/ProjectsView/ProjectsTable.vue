@@ -1,5 +1,5 @@
 <template>
-    <div class=" w-full h-screen p-10 scale-95 my-20 flex flex-row bg-gray-600 bg- rounded-xl">
+    <div class=" w-full h-screen p-10 scale-95 my-20 flex flex-row bg-gray-500 bg- rounded-xl">
         <p class=" m-5 basis-1/3 text-white text-8xl self-center font-bold textShadow">All<br>Projects</p>
 
         <div :class="activeTag.color" class=" basis-2/3 relative m-5 w-full rounded-xl shadow-black shadow-2xl bg-opacity-50">

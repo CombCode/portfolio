@@ -1,7 +1,18 @@
 <template>
-  <div class=" flex flex-row overflow-y-hidden w-screen bg-green-500 dark:bg-green-800 pt-20">
-    <SimilCV class=" w-2/3"></SimilCV>
-    <KnowledgeTreesContainer class=" w-1/3"></KnowledgeTreesContainer>
+
+  <div class=" h-20 w-full bg-green-400 drop-shadow-[0_20px_10px_rgba(0,0,0,0.30)] shadow-black"></div>
+  <div class=" h-10 w-full bg-green-500"></div>
+
+  
+  <div class=" relative w-screen h-screen overflow-y-hidden bg-neutral-200 dark:bg-green-800">
+    <svg class=" bgPattern absolute"></svg>
+    <svg class=" absolute grassSpacer w-full"></svg>
+
+    <div class=" flex flex-row">
+      <SimilCV class=" w-4/5 z-10"></SimilCV>
+      <KnowledgeTreesContainer class=" w-1/5 hover:w-1/3 duration-200 transition-all z-10"></KnowledgeTreesContainer>
+    </div>
+    
   </div>
 </template>
 <script>
@@ -18,3 +29,7 @@ export default {
     },
 }
 </script>
+<style >
+
+</style>
+

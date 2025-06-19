@@ -1,7 +1,7 @@
 <template>
   <div class="transition-all ease-in-out duration-500">
     <Header class=" absolute" @mode="modeSetting"></Header>
-    <Body class=" px-60 transition-all ease-in-out duration-500"/>
+    <Body class=" px-60 transition-all ease-in-out duration-500 overflow-hidden"/>
   </div>
 </template>
 
@@ -23,3 +23,20 @@ export default {
   }
 };
 </script>
+<style>
+  .grassSpacer {
+    aspect-ratio: 1920 / 1080;
+    background-size: 100% 100%;
+    background-image: url('@/assets/layered-waves-haikei.svg');
+    background-repeat: no-repeat;
+  }
+
+  .bgPattern {
+    aspect-ratio: 100 / 100;
+    background-size: 10% 10%;
+    background-image: url('@/assets/pattern1SVG.svg');
+    background-repeat:repeat;
+    rotate: 30deg;
+    opacity: 0.2;
+  }
+</style>

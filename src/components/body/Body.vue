@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen w-screen flex flex-col justify-end bg-cyan-200 dark:bg-cyan-900">
+    <div class="h-screen w-screen relative flex flex-col justify-end bg-cyan-200 dark:bg-cyan-900">
         <div>
             <MeCardVue class=" w-2/3 h-60 mb-10"/>
         </div>
@@ -11,9 +11,10 @@
             <signBoard class=" mt-2 -rotate-12 hover:-translate-y-2 transition-all ease-out duration-500" caption="Not-tech things"></signBoard>
             <signBoard class=" mt-0 rotate-12 hover:-translate-y-2 transition-all ease-out duration-500" caption="How is this made?"></signBoard>
         </div>
-        <div class=" absolute w-screen h-20 bg-green-700 dark:bg-green-950 -translate-x-60"></div>
-        <div class=" absolute w-screen h-16 bg-green-600 dark:bg-green-900 -translate-x-60"></div>
-        <div class=" absolute w-screen h-12 bg-green-500 dark:bg-green-800 -translate-x-60"></div>
+        
+        <img src="@/assets/layered-waves-haikeiUP.svg" alt="layered-waves-haikeiUP" class="absolute w-full left-1/2 -translate-x-1/2"/>
+        <img src="@/assets/bushessvg2.svg" alt="bushessvg" class="absolute w-full left-1/2 -translate-x-1/2 translate-y-1/4 z-50 scale-x-110 drop-shadow-[0_35px_35px_rgba(0,0,0,0.50)]"/>
+
         
     </div>
 </template>
@@ -50,37 +51,11 @@ export default {
 </script>
 
 <style>
-.leftCards_Animation-enter-from {
-    translate: -100px;
-    opacity: 0%;
-
-}
-.rightCards_Animation-enter-from {
-    translate: 100px;
-    opacity: 0%;
-}
-
-.leftCards_Animation-enter-to,
-.rightCards_Animation-enter-to {
-    translate: 0px;
-    opacity: 100%;
-
-}
-.leftCards_Animation-enter-active,
-.rightCards_Animation-enter-active
- {
-  transition: all 1s;
-  transition-timing-function: cubic-bezier(0.05, 0.95, 0.05, 1);
-}
-
-.leftCards_Animation-leave-to,
-.rightCards_Animation-leave-to {
-    opacity: 0%;
-
-}
-.leftCards_Animation-leave-active,
-.rightCards_Animation-leave-active{
-    transition: all 0.5s;
-}
-    
+    .grassSpacerUp {
+    width: 100%;
+    height: 100%;
+   
+    background-image: url('@/assets/layered-waves-haikeiUP.svg');
+    background-repeat: no-repeat;
+  }
 </style>

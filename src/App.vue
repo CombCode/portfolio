@@ -1,6 +1,8 @@
 <template>
   <div :class="{ 'dark': darkMode }">
-    <HomeView @mode="modeSetting" />
+    <HomeView @mode="modeSetting">
+      <div class=" bg-green-500 py-40"></div>
+    </HomeView>
     <router-view></router-view>
     <div id="modal"></div>
   </div>
