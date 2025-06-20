@@ -4,6 +4,7 @@
       <div class=" bg-green-500 py-40"></div>
     </HomeView>
     <router-view></router-view>
+    <div id="projectModal"></div>
     <WorkInProgressModal v-if="showProvModal_state" class=" z-50 " @close = "showProvModal"></WorkInProgressModal>
   </div>
 </template>
