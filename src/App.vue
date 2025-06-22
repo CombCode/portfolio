@@ -35,7 +35,7 @@ export default{
       console.log("showProvModal_state")
     }
 
-    setTimeout(showProvModal, 2000)
+    setTimeout(showProvModal, 5000)
 
     return{darkMode, modeSetting, showProvModal_state, showProvModal}
   },
