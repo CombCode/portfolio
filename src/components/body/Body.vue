@@ -6,10 +6,8 @@
 
         
         <div class=" flex flex-row justify-around overflow-clip pt-10 z-10">
-            <signBoard class=" mt-5 rotate-3 hover:-translate-y-2 transition-all ease-out duration-500" caption="About me"></signBoard>
+            <signBoard class=" mt-5 -rotate-3 hover:-translate-y-2 transition-all ease-out duration-500" caption="About me"></signBoard>
             <signBoard class=" mt-0 rotate-6 hover:-translate-y-2 transition-all ease-out duration-500" caption="Projects"></signBoard>
-            <signBoard class=" mt-2 -rotate-12 hover:-translate-y-2 transition-all ease-out duration-500" caption="Not-tech things"></signBoard>
-            <signBoard class=" mt-0 rotate-12 hover:-translate-y-2 transition-all ease-out duration-500" caption="How is this made?"></signBoard>
         </div>
         
         <img src="@/assets/layered-waves-haikeiUP.svg" alt="layered-waves-haikeiUP" class="absolute w-full left-1/2 -translate-x-1/2"/>

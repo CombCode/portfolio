@@ -37,6 +37,6 @@ export default {
     background-image: url('@/assets/pattern1SVG.svg');
     background-repeat:repeat;
     rotate: 30deg;
-    opacity: 0.2;
+    opacity: 1;
   }
 </style>

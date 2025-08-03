@@ -7,15 +7,15 @@
     <div class=" overflow-hidden w-full h-full absolute">
       <svg class=" bgPattern scale-150"></svg>
     </div>
-  
+
     <div class=" absolute grassSpacer w-full"></div>
-    
-    <ProjectsSlider></ProjectsSlider>
+
+    <!-- <ProjectsSlider></ProjectsSlider> -->
 
     <ProjectsTable></ProjectsTable>
 
   </div>
-    
+
 </template>
 <script>
 import ProjectsSlider from '@/components/ProjectsView/ProjectsSlider.vue';

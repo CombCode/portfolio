@@ -2,7 +2,7 @@
      <div  class="backdrop-blur-md bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-75 w-screen h-screen fixed left-0 top-0 py-20 px-80" @click.self="close">
         <div class=" relative bg-gray-100 dark:bg-gray-800 border-4 border-primary-Lmode text-black dark:text-white h-full w-full rounded-2xl  overflow-hidden" >       
             <div class="flex flex-col p-10 w-full h-full justify-around">
-                <div class=""><h1 class=" text-5xl text-accent-Lmode relative z-50"> WORK IN PROGRESS</h1><h1 class=" text-5xl text-primary-Lmode w-full z-40 absolute left-1/2 -translate-x-1/2 -translate-y-3/4 opacity-60 scale-105"> WORK IN PROGRESS</h1></div>                       
+                <div class=""><h1 class=" text-5xl text-accent-Lmode relative z-50"> WORK IN PROGRESS</h1></div>                       
                 <p class=" flex-grow py-10 text-xl text-left z-10"> Please keep in mind that this is a personal project and is subject to changes as I change.<br><br>
                     Since it's a portfolio, it's meant to grow and evolve as I gain more experience, learn and build new projects. </p>
                 <hr class=" border-accent-Lmode dark:border-white z-10">
