@@ -6,13 +6,13 @@
                 <div v-for="(field, index) in fields" :key="index">
                     <div class=" py-5">
                         <label :for="field.name" class=" block text-sm text-text-Lmode text-left w-full">{{ field.name }}</label>
-                        <textarea  v-if="field.type === 'textarea'"
+                        <textarea :name="field.name"  v-if="field.type === 'textarea'"
                         class=" w-full h-32 rounded-md shadow p-2 align-top text-left resize-none"
                         ></textarea>
                         <input v-else :type="field.type" :name="field.name" :placeholder="field.placeholder" class=" rounded-md shadow p-2 w-64">                    
                     </div>
                 </div>
-                <div class="group overflow-hidden p-2 flex flex-row align-middle justify-center mt-10 w-auto rounded sendShadows border-b-2 border-black hover:scale-110 active:scale-100 transition-all ease-in-out cursor-pointer"
+                <button class="group overflow-hidden p-2 flex flex-row align-middle justify-center mt-10 w-auto rounded sendShadows border-b-2 border-black hover:scale-110 active:scale-100 transition-all ease-in-out cursor-pointer"
                 @click="submitAnimation"
                 type="submit">
                     <p class=" font-bold text-black">Send</p>
@@ -22,7 +22,7 @@
                         '-translate-y-20 translate-x-20':sendIconanimationIsActive,
                         'translate-y-20 -translate-x-20 transition-none': resetIconPosition
                     }"/>  
-                </div>
+                </button>
             </form>
         </div>
     </div>
