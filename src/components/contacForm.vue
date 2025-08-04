@@ -1,7 +1,7 @@
 <template>
     <div class=" w-auto h-auto bg-primary-Lmode rounded-xl shadow">
         <div class="flex flex-col p-10">
-            <form name="messagesForm" method="POST" data-netlify="true">
+            <form name="messagesForm" method="POST" data-netlify="true" netlify>
                 <input type="hidden" name="form-name" value="messagesForm">
                 <div v-for="(field, index) in fields" :key="index">
                     <div class=" py-5">
