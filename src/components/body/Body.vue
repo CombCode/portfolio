@@ -1,9 +1,8 @@
 <template>
     <div class="h-screen w-screen relative flex flex-col justify-end bg-cyan-200 dark:bg-cyan-900">
-        <div>
-            <MeCardVue class=" w-2/3 h-60 mb-10"/>
+        <div class=" grow flex flex-col items-center justify-center md:flex-none md:mx-0 mx-5 ">
+            <MeCardVue class=" md:w-2/3 w-full mt-20 md:mt-0"/>
         </div>
-
         
         <div class=" flex flex-row justify-around overflow-clip pt-10 z-10">
             <signBoard class=" mt-5 -rotate-3 hover:-translate-y-2 transition-all ease-out duration-500" caption="About me"></signBoard>

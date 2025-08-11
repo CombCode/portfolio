@@ -9,7 +9,7 @@
                 <p v-if="formIsOpen" class=" text-text-Lmode dark:text-background-Lmode font-roboto text-xl select-none">close</p>
                 <p v-if="!formIsOpen"class=" text-accent-Lmode dark:text-secondary-Lmode font-roboto font-bold text-2xl select-none">!</p>
             </div>
-            <contacForm class=" absolute top-0 left-0 -z-10 transition-all ease-in-out" :class = "{'scale-0 origin-top-left' : !formIsOpen}"></contacForm>
+            <contacForm class=" md:absolute fixed left-1/2 -translate-x-1/2 top-10 md:-translate-x-0 md:top-0 md:left-0 -z-10 transition-all ease-in-out" :class = "{'scale-0 origin-top-left' : !formIsOpen}"></contacForm>
         </div>
     </div>
 </template>

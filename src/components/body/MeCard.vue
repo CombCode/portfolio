@@ -7,12 +7,10 @@
         
         <transition name="appearFormLeft">
         <div class="basis-2/3 w-full h-full flex flex-col items-start justify-center pl-5" v-if="showName">
-            <p class=" text-9xl text-text-Lmode dark:text-background-Lmode">Hi</p>
-            <p class=" text-6xl text-text-Lmode dark:text-background-Lmode">I'm Marco</p>
+            <p class=" md:text-9xl text-6xl text-text-Lmode dark:text-background-Lmode">Hi</p>
+            <p class=" md:text-6xl text-4xl text-text-Lmode dark:text-background-Lmode">I'm Marco</p>
         </div>
         </transition>
-    
-
 </div>
 </template>
 

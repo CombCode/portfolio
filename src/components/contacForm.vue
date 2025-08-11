@@ -1,7 +1,7 @@
 <template>
     <div class=" w-auto h-auto bg-primary-Lmode rounded-xl shadow">
         <div class="flex flex-col p-10">
-            <form name="messagesForm" method="POST" data-netlify="true" netlify>
+            <form name="messagesForm" method="POST" data-netlify="true" netlify class="group">
                 <input type="hidden" name="form-name" value="messagesForm">
                 <div v-for="(field, index) in fields" :key="index">
                     <div class=" py-5">
@@ -12,13 +12,14 @@
                         <input v-else :type="field.type" :name="field.name" :placeholder="field.placeholder" class=" rounded-md shadow p-2 w-64">                    
                     </div>
                 </div>
-                <button class="group overflow-hidden p-2 flex flex-row align-middle justify-center mt-10 w-auto rounded sendShadows border-b-2 border-black hover:scale-110 active:scale-100 transition-all ease-in-out cursor-pointer"
+                <button class="md:group overflow-hidden p-2 flex flex-row align-middle justify-center mt-10 w-auto mx-auto px-10 rounded sendShadows border-b-2 border-black hover:scale-110 active:scale-100 transition-all ease-in-out cursor-pointer"
                 @click="submitAnimation"
                 type="submit">
-                    <p class=" font-bold text-black">Send</p>
-                    <Send color="black" stroke-width="2" class=" transition-all ease-in-out duration-500 translate-y-20 -translate-x-20"
+                    <p class=" font-bold text-black translate-x-2 group-hover:translate-x-0 group-focus-within:translate-x-0 transition-all ease-in-out"
+                    :class="{'translate-x-0':sendIconanimationIsActive}">Send</p>
+                    <Send color="black" stroke-width="2" class=" transition-all ease-in-out duration-500 translate-y-20 -translate-x-20  group-focus-within:translate-y-0  group-focus-within:translate-x-0"
                     :class="{
-                        'group-hover:translate-y-0 group-hover:translate-x-0' : !sendIconanimationIsActive&&!resetIconPosition,
+                        'group-hover:translate-y-0 group-hover:translate-x-0':!sendIconanimationIsActive&&!resetIconPosition,
                         '-translate-y-20 translate-x-20':sendIconanimationIsActive,
                         'translate-y-20 -translate-x-20 transition-none': resetIconPosition
                     }"/>  
