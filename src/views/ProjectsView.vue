@@ -10,8 +10,6 @@
 
     <div class=" absolute grassSpacer w-full"></div>
 
-    <!-- <ProjectsSlider></ProjectsSlider> -->
-
     <ProjectsTable></ProjectsTable>
 
   </div>

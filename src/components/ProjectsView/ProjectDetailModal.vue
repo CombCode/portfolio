@@ -1,8 +1,8 @@
 <template>
-    <div  class="backdrop-blur-md bg-gray-500 dark:bg-black bg-opacity-50 dark:bg-opacity-75 w-screen h-screen fixed left-0 top-0 py-20 px-80" @click.self="closeModal">
-        <div class=" bg-[#fefae0] dark:bg-gray-800 border-8 border-primary-Lmode dark:border-cyan-900 text-black dark:text-white h-full w-full flex flex-col justify-start rounded-xl overflow-auto p-10" >
-            <h1 class=" text-4xl py-10">{{title}}</h1>
-            <p class=" py-10 self-start">{{description}}</p>
+    <div  class="backdrop-blur-md bg-gray-500 dark:bg-black bg-opacity-50 dark:bg-opacity-75 w-screen h-screen fixed left-0 top-0 md:py-20 py-12 md:px-80 px-4" @click.self="closeModal">
+        <div class=" bg-[#fefae0] dark:bg-gray-800 md:border-8 border-2 border-primary-Lmode dark:border-cyan-900 text-black dark:text-white h-full w-full flex flex-col justify-start rounded-xl overflow-auto p-10" >
+            <h1 class=" text-4xl md:py-10 py-4">{{title}}</h1>
+            <p class=" py-10 self-start text-left md:text-center">{{description}}</p>
             <div class=" py-10 w-full h-auto p-2 border-r-8 border-l-8 border-primary-Lmode bg-gray-600 rounded-xl">
                 <div class=" flex flex-row flex-grow overflow-x-scroll w-full h-auto">
                     <div v-for="(screenshot, index) in screenshots" :key="index" tabindex="0" class="h-96 aspect-square focus:aspect-card cursor-pointer border border-gray-600 rounded flex-shrink-0 p-1 m-2">
