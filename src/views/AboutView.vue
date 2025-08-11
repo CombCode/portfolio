@@ -4,13 +4,13 @@
   <div class=" h-10 w-full bg-green-500"></div>
 
   
-  <div class=" relative w-screen h-screen overflow-y-hidden bg-neutral-200 dark:bg-green-800">
+  <div class=" relative w-screen h-screen overflow-hidden bg-neutral-200 dark:bg-green-800">
     <svg class=" bgPattern absolute"></svg>
     <svg class=" absolute grassSpacer w-full"></svg>
 
-    <div class=" flex flex-row">
-      <SimilCV class=" w-4/5 z-10"></SimilCV>
-      <KnowledgeTreesContainer class=" w-1/5 hover:w-1/3 duration-200 transition-all z-10"></KnowledgeTreesContainer>
+    <div class=" flex flex-row w-full h-full ">
+      <SimilCV class=" w-4/5 z-10 "></SimilCV>
+      <KnowledgeTreesContainer class=" flex-grow w-1/5 md:hover:w-1/3 focus-within:w-full duration-200 transition-all z-10" tabindex="0"></KnowledgeTreesContainer>
     </div>
     
   </div>
