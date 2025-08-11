@@ -1,7 +1,7 @@
 <template>
   <div class="transition-all ease-in-out duration-500">
     <Header class=" absolute" @mode="modeSetting"></Header>
-    <Body class=" px-60 transition-all ease-in-out duration-500 overflow-hidden"/>
+    <Body class=" md:px-60 transition-all ease-in-out duration-500 overflow-hidden"/>
   </div>
 </template>
 

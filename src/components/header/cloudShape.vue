@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-40 h-14 bg-cyan-500 dark:bg-cyan-700 rounded-full border-2 border-background-Lmode flex items-center hover:scale-105 shadow-2xl transition-all ease-in-out duration-300">
+    <div class="relative scale-75 md:scale-100 w-40 h-14 bg-cyan-500 dark:bg-cyan-700 rounded-full border-2 border-background-Lmode flex items-center md:hover:scale-105 hover:scale-90 shadow-2xl transition-all ease-in-out duration-300">
         <div class=" justify-start w-20 h-20 -mr-5 bg-cyan-500 dark:bg-cyan-700 rounded-full border-t-2 border-background-Lmode clippingCloud transition-all ease-in-out duration-300"></div>
         <div class=" justify-center w-28 h-28 -mx-5 bg-cyan-500 dark:bg-cyan-700 rounded-full border-t-2 border-b-2 border-background-Lmode clippingCloud transition-all ease-in-out duration-300"></div>
         <div class=" justify-end w-16 h-16 -ml-5 bg-cyan-500 dark:bg-cyan-700 rounded-full border-t-2 border-background-Lmode  clippingCloud transition-all ease-in-out duration-300"></div>

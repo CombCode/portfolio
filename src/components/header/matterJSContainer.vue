@@ -1,5 +1,5 @@
 <template>
-    <div ref="scene" class=" h-96 w-96 -translate-x-28">
+    <div ref="scene" class="-translate-x-28 scale-50 md:scale-100 -translate-y-20 md:-translate-y-0">
       
     </div>
   </template>
