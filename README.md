@@ -1,19 +1,7 @@
-# portfolio
+# Portfolio
 
-## Project setup
-```
-npm install
-```
+## Description
+This website brings all my side projects and exercises together in one place. It’s still a work in progress and will keep evolving with needs over time
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Link
+[portfoliomarcooldani.netlify.app](https://portfoliomarcooldani.netlify.app/)  
