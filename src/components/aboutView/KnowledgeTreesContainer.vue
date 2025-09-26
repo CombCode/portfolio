@@ -30,7 +30,7 @@ export default {
             "Frontend",
             "Backend",
             "Graphics",
-            "Versioning"
+            "Generative Art",
         ]
 
         return { colorArray, treeNames};

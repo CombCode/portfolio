@@ -13,10 +13,10 @@ export default {
         const id = ref("skillTree" + props.index)
         
             const skillsData = {
-                name: "Web Development",
+                name: "placeholder",
                 children: [
                     {
-                        name: "Frontend",
+                        name: "placeholder1",
                         children: [
                             { name: "HTML" },
                             { name: "CSS" },
@@ -25,7 +25,7 @@ export default {
                         ],
                     },
                     {
-                        name: "Backend",
+                        name: "placeholeder2",
                         children: [
                             { name: "Node.js" },
                             { name: "MongoDB" },
