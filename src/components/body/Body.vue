@@ -1,7 +1,9 @@
 <template>
-    <div class="h-screen w-screen relative flex flex-col justify-end bg-cyan-200 dark:bg-cyan-900">
+    <div class="h-screen w-screen relative flex flex-col justify-end bg-transparent dark:bg-cyan-900">
+        <div id="canvasContainer" class="absolute inset-0 w-full h-full">
+        </div>
         <div class=" grow flex flex-col items-center justify-center md:flex-none md:mx-0 mx-5 ">
-            <MeCardVue class=" md:w-2/3 w-full mt-20 md:mt-0"/>
+            <MeCardVue class=" md:w-2/3 w-full mt-20 md:mt-0 z-20"/>
         </div>
         
         <div class=" flex flex-row justify-around overflow-clip pt-10 z-10">
@@ -19,12 +21,20 @@
 <script>
 import MeCardVue from './MeCard.vue'
 import signBoard from './signBoard.vue'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
+import flowFieldSketch from './flowField/sketch.js'
+import p5 from 'p5'
+
 export default {
     components: {
         MeCardVue, signBoard
     },
     setup(){
+        
+        onMounted(() => {
+            new p5(flowFieldSketch, document.getElementById('canvasContainer'))
+        })
+
         let showProjectSection = ref(false)
 
         function handle_showCurrentHomeSection(e){
