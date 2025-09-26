@@ -1,5 +1,5 @@
 <template>
-    <div class=" w-full h-screen p-10 scale-95 my-20 flex md:flex-row flex-col bg-gray-500 bg- rounded-xl md:pt-5">
+    <div class=" w-full h-screen p-5 scale-95 my-20 flex md:flex-row flex-col bg-gray-500 bg- rounded-xl md:pt-5">
         <p class=" my-5 md:m-5 basis-1/3 text-white md:text-8xl text-6xl self-center font-bold textShadow">All<br>Projects</p>
 
         <div :class="activeTag.color" class=" basis-2/3 relative md:m-5 w-full rounded-xl shadow-black shadow-2xl bg-opacity-50">
@@ -32,7 +32,7 @@ export default {
   setup() {
     const tags = [
       { name: "All", color: "bg-pink-600" },
-      { name: "p5.js", color: "bg-yellow-600" },
+      { name: "Generative Art", color: "bg-yellow-600" },
       { name: "Web", color: "bg-cyan-600" },
       { name: "Graphic", color: "bg-red-600" },
       { name: "Node", color: "bg-purple-600" }

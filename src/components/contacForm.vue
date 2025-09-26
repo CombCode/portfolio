@@ -1,23 +1,23 @@
 <template>
-    <div class=" w-auto h-auto bg-primary-Lmode rounded-xl shadow">
+    <div class=" w-auto h-auto bg-primary-Lmode dark:bg-accent-Lmode rounded-xl shadow">
         <div class="flex flex-col p-10">
             <form name="messagesForm" method="POST" data-netlify="true" netlify class="group">
                 <input type="hidden" name="form-name" value="messagesForm">
                 <div v-for="(field, index) in fields" :key="index">
                     <div class=" py-5">
-                        <label :for="field.name" class=" block text-sm text-text-Lmode text-left w-full">{{ field.name }}</label>
+                        <label :for="field.name" class=" block text-sm text-text-Lmode dark:text-white text-left w-full">{{ field.name }}</label>
                         <textarea :name="field.name"  v-if="field.type === 'textarea'"
                         class=" w-full h-32 rounded-md shadow p-2 align-top text-left resize-none"
                         ></textarea>
                         <input v-else :type="field.type" :name="field.name" :placeholder="field.placeholder" class=" rounded-md shadow p-2 w-64">                    
                     </div>
                 </div>
-                <button class="md:group overflow-hidden p-2 flex flex-row align-middle justify-center mt-10 w-auto mx-auto px-10 rounded sendShadows border-b-2 border-black hover:scale-110 active:scale-100 transition-all ease-in-out cursor-pointer"
+                <button class="md:group overflow-hidden p-2 flex flex-row align-middle justify-center mt-10 w-auto mx-auto px-10 rounded sendShadows border-b-2 border-black dark:border-white hover:scale-110 active:scale-100 transition-all ease-in-out cursor-pointer"
                 @click="submitAnimation"
                 type="submit">
-                    <p class=" font-bold text-black translate-x-2 group-hover:translate-x-0 group-focus-within:translate-x-0 transition-all ease-in-out"
+                    <p class=" font-bold text-black dark:text-white translate-x-2 group-hover:translate-x-0 group-focus-within:translate-x-0 transition-all ease-in-out"
                     :class="{'translate-x-0':sendIconanimationIsActive}">Send</p>
-                    <Send color="black" stroke-width="2" class=" transition-all ease-in-out duration-500 translate-y-20 -translate-x-20  group-focus-within:translate-y-0  group-focus-within:translate-x-0"
+                    <Send stroke-width="2" class=" stroke-black dark:stroke-white transition-all ease-in-out duration-500 translate-y-20 -translate-x-20  group-focus-within:translate-y-0  group-focus-within:translate-x-0"
                     :class="{
                         'group-hover:translate-y-0 group-hover:translate-x-0':!sendIconanimationIsActive&&!resetIconPosition,
                         '-translate-y-20 translate-x-20':sendIconanimationIsActive,

@@ -1,13 +1,12 @@
 <template>
     <div ref="scene" class="-translate-x-28 scale-50 md:scale-100 -translate-y-20 md:-translate-y-0">
-      
     </div>
   </template>
   
   <script setup>
   import { onMounted, ref } from 'vue'
   import Matter from 'matter-js'
-
+  import moonImg from '../../assets/moon.svg'
   const props = defineProps({
     astro: {
       type: String,
@@ -18,7 +17,7 @@
   const scene = ref(null)
   
   onMounted(() => {
-    const { Engine, Render, World, Bodies, Runner, Composites, Composite, Constraint, Body} = Matter
+    const { Engine, Render, World, Bodies, Runner, Composites, Composite, Constraint, Body, Svg } = Matter
   
     const engine = Engine.create()
     const world = engine.world
@@ -47,21 +46,18 @@
     }
     else if(props.astro == "moon"){
         console.log("moon")
-        const fullMoon = Bodies.circle(200, -100, 60, {
-        render: { fillStyle: 'white' }
-        })
-
-        const boolSubtractionMoon = Bodies.circle(240, -100, 60, {
-        render: { fillStyle: 'rgb(22, 78, 99)' }
-        })
-
-        // Unione dei due cerchi come un unico corpo statico
-        astroObj = Body.create({ 
-        position: { x: 200, y: -100 },   
+        astroObj = Bodies.circle(210, -100, 60, {
         density: 0.04,
         frictionAir: 0.005,
-        parts: [fullMoon, boolSubtractionMoon],
+        render: { 
+            sprite: {
+                texture: moonImg,
+                xScale: 0.5,
+                yScale: 0.5
+            }
+        }
         })
+
     }
     
     
