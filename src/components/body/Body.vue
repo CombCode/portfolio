@@ -1,6 +1,6 @@
 <template>
     <div class="h-screen w-screen relative flex flex-col justify-end bg-transparent dark:bg-cyan-900">
-        <div id="canvasContainer" class="absolute inset-0 w-full h-full">
+        <div id="FlowFieldCanvasContainer" class="absolute inset-0 w-full h-full">
         </div>
         <div class=" grow flex flex-col items-center justify-center md:flex-none md:mx-0 mx-5 ">
             <MeCardVue class=" md:w-2/3 w-full mt-20 md:mt-0 z-20"/>
@@ -32,7 +32,7 @@ export default {
     setup(){
         
         onMounted(() => {
-            new p5(flowFieldSketch, document.getElementById('canvasContainer'))
+            new p5(flowFieldSketch, document.getElementById('FlowFieldCanvasContainer'))
         })
 
         let showProjectSection = ref(false)

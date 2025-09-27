@@ -1,7 +1,8 @@
 <template>
-    <div ref="tiltBg" class="md:m-20 bg-white dark:bg-gray-600 dark:bg-opacity-70 dark:text-white bg-opacity-50 m-6 my-20  p-5 pb-10 rounded-3xl overflow-y-scroll ">
+    <div ref="tiltBg" class=" relative md:m-20 bg-white dark:bg-gray-600 dark:bg-opacity-70 dark:text-white bg-opacity-80 border-2 m-6 my-20 py-20 rounded-3xl overflow-y-scroll ">
+        <div id="blobbyBGCanvasContainer" class="blobbyBGCanvasContainer pointer-events-none -z-40 sticky -my-[300px] inset-0 flex flex-row justify-center items-center opacity-50 w-full h-full"></div>
         <div class=" flex flex-col gap-10">
-            <div id="title" class=" text-8xl p-10">Me in a nutshell</div>
+            <div id="title" class=" text-8xl">Me in a nutshell</div>
             
             <div v-for="card in cardsData" ref="tiltCard" id="tiltCard" class=" shadow-lg p-8 mx-40 bg-white bg-opacity-50 dark:bg-gray-600 dark:bg-opacity-70 rounded-2xl transition-all ease-out duration-500 border-2 border-white dark:border-accent-Lmode hover:scale-125 hover:shadow-2xl">
                 <h2 class=" text-3xl">{{card.title}}</h2>
@@ -16,25 +17,27 @@
 import { onMounted } from 'vue'
 import VanillaTilt from 'vanilla-tilt'
 import { ref } from 'vue'
+import p5 from 'p5'
+import blobSketch from './blobbyBG/sketch.js'
 
 export default {
     setup(){
         let cardsData = [
             {
                 title: "Who I am",
-                content: "I'm a passionate developer with a knack for creating dynamic and responsive web applications. With a background in computer science, I thrive on solving complex problems and turning ideas into reality through code."
+                content: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             },
             {
                 title: "What I'm doing",
-                content: "Currently, I'm focused on expanding my expertise in full-stack development, working on exciting projects that leverage modern technologies like Vue.js, Node.js, and cloud services. I'm also contributing to open-source projects and collaborating with other developers to enhance my skills."
+                content: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ."
             },
             {
                 title: "Where I'm going",
-                content: "My goal is to become a lead developer, guiding teams to build innovative solutions that make a difference. I'm committed to continuous learning and staying updated with the latest industry trends to ensure I can deliver top-notch applications."
+                content: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             },
             {
                 title: "Also find me at @",
-                content: "You can connect with me on LinkedIn, GitHub, and Twitter where I share insights about web development, programming tips, and my latest projects."
+                content: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             }
         ]
 
@@ -43,7 +46,7 @@ export default {
 
         onMounted(() => {
             VanillaTilt.init(tiltBg.value, {
-                max: 5,
+                max: 10,
                 speed: 3000,
                 glare: false,
                 reset: false,
@@ -58,6 +61,12 @@ export default {
                 perspective: 4000,
                 "max-glare": 0.5,  
             })
+
+            const containers = document.getElementsByClassName('blobbyBGCanvasContainer')
+            for (let i = 0; i < containers.length; i++) {
+                new p5(blobSketch, containers[i])
+            }
+
         })
 
 
